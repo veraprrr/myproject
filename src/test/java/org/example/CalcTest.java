@@ -59,7 +59,7 @@ class CalcTest {
     @ParameterizedTest(name = "#{index} - вычитание {0} и {1}, ожидаем {2}")
     @DisplayName("Прверка разности 1")
     @CsvSource({"1, 1, 0", "0, -1, 1", "-1, -1, 0"})
-    @Tag("paramrazn")
+    @Tag("param")
     void razn1(int c, int d, int expectedResult2) {
         Calc calc = new Calc();
         int result2 = calc.razn(c, d);
