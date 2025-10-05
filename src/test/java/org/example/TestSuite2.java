@@ -6,7 +6,6 @@ import org.junit.platform.suite.api.Suite;
 
 @Suite
 @SelectPackages("org.example")
-@IncludeTags("param")
-public class TestSuite {
+@IncludeTags("paramrazn")
+public class TestSuite2 {
 }
-

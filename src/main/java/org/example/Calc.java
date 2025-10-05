@@ -8,4 +8,11 @@ public class Calc {
         System.out.printf("Сумма %d и %d равна %d\n", a, b, result);
         return result;
     }
+
+    public int razn(int c, int d){
+        int result2;
+        result2 = c - d;
+        System.out.printf("Разность %d и %d равна %d\n", c, d, result2);
+        return result2;
+    }
 }
