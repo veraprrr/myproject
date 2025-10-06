@@ -32,19 +32,19 @@ class CalcTest {
     @DisplayName("Прверка суммирования")
     @CsvSource({"1, 2, 3", "-1, 2, 1", "0, 0, 0"})
     @Tag("param")
-    void summTest(int a, int b, int expectedResult) {
+    void summTest(int a, int b, int expectedResultSumm) {
         Calc calc = new Calc();
         int resultSumm = calc.summ(a, b);
-        Assertions.assertEquals(expectedResult, resultSumm, "Результат суммирования неверный");
+        Assertions.assertEquals(expectedResultSumm, resultSumm, "Результат суммирования неверный");
     }
 
     @ParameterizedTest(name = "#{index} - вычитание {0} и {1}, ожидаем {2}")
     @DisplayName("Прверка разности")
     @CsvSource({"1, 1, 0", "0, -1, 1", "-1, -1, 0"})
     @Tag("param")
-    void diffTest(int c, int d, int expectedResult2) {
+    void diffTest(int c, int d, int expectedResultDiff) {
         Calc calc = new Calc();
         int resultDiff = calc.diff(c, d);
-        Assertions.assertEquals(expectedResult2, resultDiff, "Результат разности неверный");
+        Assertions.assertEquals(expectedResultDiff, resultDiff, "Результат разности неверный");
     }
 }
