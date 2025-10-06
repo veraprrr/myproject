@@ -4,6 +4,6 @@ public class Main {
     public static void main(String[] args) {
         Calc calculator = new Calc();
         calculator.summ(1, 10);
-        calculator.razn(12, 5);
+        calculator.diff(12, 5);
     }
 }
